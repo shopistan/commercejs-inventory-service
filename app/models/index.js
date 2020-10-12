@@ -1,0 +1,1 @@
+exports.Inventory = require('./Inventory');

@@ -1,0 +1,11 @@
+.serverless
+.webpack
+.DS_Store
+.env
+.env.production
+package-lock.json
+node_modules/
+dist/
+coverage
+.nyc_output
+jspm_packages
