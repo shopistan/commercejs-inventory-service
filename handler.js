@@ -22,6 +22,8 @@ const updateInventory = async (event) => {
 
   if (source !== "http") body = JSON.parse(body.Sns.Message);
 
+  console.log('body: ', body);
+
   try {
     const response = await updateInventoryBySKU(body);
     if (response.hasError)
