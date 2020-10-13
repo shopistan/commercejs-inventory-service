@@ -50,10 +50,12 @@ functions:
       - http:
           path: inventory
           method: post
-      - sns: 
-          arn: arn:aws:sns:us-east-1:403302655770:orderCreated # orderCreated
-      - sns:
-          arn: arn:aws:sns:us-east-1:403302655770:productCreated # productCreated
+      - sns: orderCreated
+      - sns: productCreated
+      # - sns: 
+      #     arn: arn:aws:sns:us-east-1:403302655770:orderCreated # orderCreated
+      # - sns:
+      #     arn: 'arn:aws:sns:us-east-1:403302655770:productCreated' # productCreated
   getInventoryCount:
     handler: handler.getInventoryCount
     events:
